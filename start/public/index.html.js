@@ -41,6 +41,8 @@ const connect = () => {
 
     connection.on('updated', updatedStock => {
         const index = app.stocks.findIndex(s => s.id === updatedStock.id);
+        
+        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
         app.stocks.splice(index, 1, updatedStock);
     });
 
