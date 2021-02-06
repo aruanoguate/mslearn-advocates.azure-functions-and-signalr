@@ -328,3 +328,6 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+# Ignoring the settings file because it contains sesitive information
+start/local.settings.json
